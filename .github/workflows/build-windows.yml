@@ -16,7 +16,7 @@ jobs:
     - name: Unzip project
       run: |
         Expand-Archive -Path ManejoClientes_GO.zip -DestinationPath project
-        Copy-Item Icon.png project/ManejoClientes_GO/src/Icon.png
+        Copy-Item Icon.png project/ManejoClientes_GO/src/cmd/manejoclientes/Icon.png
 
     - name: Install Go
       uses: actions/setup-go@v5
