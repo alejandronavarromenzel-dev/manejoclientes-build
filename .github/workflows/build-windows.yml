@@ -33,7 +33,7 @@ jobs:
         go mod tidy
 
     - name: Build EXE
-      working-directory: project/ManejoClientes_GO/src
+      working-directory: project/ManejoClientes_GO/src/cmd/manejoclientes
       run: |
         fyne package -os windows -name ManejoClientes -icon ""
 
