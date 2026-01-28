@@ -25,7 +25,12 @@ jobs:
 
     - name: Install Fyne
       run: |
-        go install fyne.io/tools/cmd/fyne@v2.4.3
+        go install fyne.io/fyne/v2/cmd/fyne@v2.4.3
+
+    - name: Tidy dependencies
+      working-directory: project/ManejoClientes_GO/src
+      run: |
+        go mod tidy
 
     - name: Build EXE
       working-directory: project/ManejoClientes_GO/src
