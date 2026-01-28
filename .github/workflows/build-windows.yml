@@ -25,7 +25,7 @@ jobs:
 
     - name: Install Fyne
       run: |
-        go install fyne.io/tools/cmd/fyne@latest
+        go install fyne.io/tools/cmd/fyne@v2.4.3
 
     - name: Build EXE
       working-directory: project/ManejoClientes_GO/src
